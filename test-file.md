@@ -9,7 +9,7 @@
 
 asd[]asd(90)asd
 
-[](90)123
+
 
 
 random stuff(no link here)
@@ -18,4 +18,4 @@ random stuff(no link here)
 
 random text
 
-
+[](90)123
