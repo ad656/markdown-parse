@@ -14,15 +14,21 @@ public class MarkdownParse {
             int nextOpenBracket = markdown.indexOf("[", currentIndex);
             if(nextOpenBracket>=0 ){
             int nextCloseBracket = markdown.indexOf("]", nextOpenBracket);
+            if(nextCloseBracket>=0){
             int openParen = markdown.indexOf("(", nextCloseBracket);
+            if(openParen>=0){
             int closeParen = markdown.indexOf(")", openParen);
+            if(closeParen>=0){
             toReturn.add(markdown.substring(openParen + 1, closeParen));
             currentIndex = closeParen + 1;
+                     }
+                }
+             }
+            }
+            else
+            currentIndex = markdown.length();
         }
-        else
-        currentIndex = markdown.length();
-        }
-        return toReturn;
+        return toReturn; 
     }
     public static void main(String[] args) throws IOException {
 		Path fileName = Path.of(args[0]);
