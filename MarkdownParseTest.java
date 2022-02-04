@@ -11,7 +11,7 @@ public class MarkdownParseTest {
         assertEquals(9,3^2);
     }
     @Test
-    public void getlink() throws IOException{
+    public void test1() throws IOException{
         
         assertEquals(1,3);
     }
