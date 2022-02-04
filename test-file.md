@@ -7,15 +7,10 @@
 
 [](0)
 
-asd[]asd(90)asd
-
-[](90)123
-
-
 random stuff(no link here)
 [link?](facebook.com)
 
+[](90)123
 
-random text
-
+asd[l]asd(90)asd
 
