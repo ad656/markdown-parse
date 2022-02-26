@@ -9,6 +9,23 @@ import java.util.List;
 public class MarkdownParseTest {
 
     @Test
+    public void testP1() throws IOException{
+        String contents= Files.readString(Path.of("/Users/allan656/Documents/GitHub/markdown-parse/test.md"));
+        assertEquals(List.of("`google.com"),MarkdownParse.getLinks(contents));
+    }
+
+    @Test
+    public void testP2() throws IOException{
+        String contents= Files.readString(Path.of("/Users/allan656/Documents/GitHub/markdown-parse/test2.md"));
+        assertEquals(List.of("a.com(())","example.com"),MarkdownParse.getLinks(contents));
+    }
+    @Test 
+    public void testP3() throws IOException{
+        String contents= Files.readString(Path.of("/Users/allan656/Documents/GitHub/markdown-parse/test3.md"));
+        assertEquals(List.of("https://www.twitter.com","https://ucsd-cse15l-w22.github.io/","https://cse.ucsd.edu/"),MarkdownParse.getLinks(contents));
+    }
+
+    @Test
     public void testFile1() throws IOException {
         String contents= Files.readString(Path.of("./test-file.md"));
         List<String> expect = List.of("https://something.com", "some-page.html");
